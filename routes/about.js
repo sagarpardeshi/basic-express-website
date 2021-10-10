@@ -1,13 +1,13 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
+/* GET users listing. */
 router.get('/', function (req, res, next) {
   res.render(
-    'index',
+    'about',
     {
-      title: 'Home',
-      message: 'Welcome to this simple, basic express website.'
+      title: 'About',
+      message: 'Welcome to our about page.'
     }
   );
 });
