@@ -6,6 +6,7 @@ var logger = require('morgan');
 var favicon = require('serve-favicon');
 var bodyParser = require('body-parser');
 var nodemailer = require('nodemailer');
+const dotenv = require('dotenv');
 
 var indexRouter = require('./routes/index');
 var aboutRouter = require('./routes/about');
@@ -16,6 +17,9 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+
+// set environment variable file path
+dotenv.config({ path: './.env' });
 
 app.use(logger('dev'));
 app.use(express.json());
