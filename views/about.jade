@@ -8,15 +8,21 @@ block content
             a.btn.btn-success.btn-lg(href='/contact') Send message
     .container
         .row
-            .col-md-4
-                h2 About Us
-                p Some Text
-                a.btn.btn-default(href='#') view Details
-            .col-md-4
-                h2 Services
-                p Some Text
-                a.btn.btn-default(href='#') view Details
-            .col-md-4
-                h2 Get In Touch
-                p Some Text
-                a.btn.btn-default(href='#') view Details
+            .col-md-12
+                blockquote
+                    h1 #{quote.quoteText}.
+                    |       
+                    cite #{quote.quoteAuthor}
+
+            //- .col-md-4
+            //-     h2 About Us
+            //-     p Some Text
+            //-     a.btn.btn-default(href='#') view Details
+            //- .col-md-4
+            //-     h2 Services
+            //-     p Some Text
+            //-     a.btn.btn-default(href='#') view Details
+            //- .col-md-4
+            //-     h2 Get In Touch
+            //-     p Some Text
+            //-     a.btn.btn-default(href='#') view Details
